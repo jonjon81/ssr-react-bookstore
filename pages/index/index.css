@@ -1,0 +1,105 @@
+.modal-1 {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 100;
+}
+
+.modal-1 input,
+.modal-1 textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.modal-1 form {
+  background: #fff;
+  padding: 2rem;
+  margin: auto;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.modal-1 .btn {
+  width: 100%;
+}
+
+.modal-1 .btn-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.book-description {
+  font-size: 0.75rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-component {
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-component:hover > .icon-container {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.fa-edit {
+  color: #fff;
+  font-size: 30px;
+}
+
+.icon-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+
+button.btn.deleteBtn.btn-danger {
+  display: flex;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0;
+}
+
+button.btn.deleteBtn.btn-danger svg {
+  font-size: 0.75rem;
+}
+
+.card-title {
+  position: absolute;
+  color: #fff;
+  width: 60%;
+  font-size: 1rem;
+  top: 20%;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.card-category {
+  text-transform: capitalize;
+}
+
+.card-price {
+  font-size: 1.5rem;
+}
