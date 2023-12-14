@@ -1,7 +1,6 @@
 import { FC, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { editBook, update } from '../redux/actions/BookActions';
-import { blockInvalidChar } from '../utils/helper';
 import { Book } from '../redux/reducers/BookReducer';
 
 interface BookFormProps {
@@ -14,7 +13,7 @@ const BookForm: FC<BookFormProps> = ({ book }) => {
   const [newTitle, setNewTitle] = useState<string>(book.title);
   const [newMessage, setNewMessage] = useState<string>(book.message);
   const [newCategory, setNewCategory] = useState<string>(book.category);
-  const [newPrice, setNewPrice] = useState<number>(book.price);
+  const [newPrice, setNewPrice] = useState<string>(book.price);
 
   const handleEdit = (e: any): void => {
     e.preventDefault();
@@ -44,12 +43,12 @@ const BookForm: FC<BookFormProps> = ({ book }) => {
           <br /> <br />
           <input
             required
-            onKeyDown={blockInvalidChar}
             value={newPrice}
-            type="number"
+            pattern="[0-9]*"
+            type="text"
             name="price"
             placeholder="Enter new price"
-            onChange={(e) => setNewPrice(Number(e.target.value))}
+            onChange={(e) => setNewPrice(e.target.value)}
           />
           <br /> <br />
           <input

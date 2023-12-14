@@ -8,7 +8,7 @@ interface BookProps {
   book: {
     id: string;
     title: string;
-    price: number;
+    price: string;
     category: string;
     message: string;
   };

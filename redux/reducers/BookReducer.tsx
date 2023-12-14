@@ -5,7 +5,7 @@ const initialState: Book[] = [
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil dolorum minus obcaecati sequi esse iusto dignissimos doloribus, sit quasi deleniti qui consequuntur.',
     id: '1',
     category: 'fiction',
-    price: 22.99,
+    price: '22.99',
     editing: false,
   },
   {
@@ -14,7 +14,7 @@ const initialState: Book[] = [
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum odit, placeat praesentium in eos repellat cumque labore alias hic ad vero error!',
     id: '2',
     category: 'health',
-    price: 10.55,
+    price: '10.55',
     editing: false,
   },
   {
@@ -23,7 +23,7 @@ const initialState: Book[] = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt, officia alias animi rem quo sint dolores fuga voluptate repudiandae laudantium deleniti.',
     id: '3',
     category: 'baking',
-    price: 14.25,
+    price: '14.25',
     editing: false,
   },
 ];
@@ -33,7 +33,7 @@ export interface Book {
   message: string;
   id: string;
   category: string;
-  price: number;
+  price: string;
   editing: boolean;
 }
 
@@ -47,7 +47,7 @@ interface BookUpdateData {
   newTitle: string;
   newMessage: string;
   newCategory: string;
-  newPrice: number;
+  newPrice: string;
 }
 
 const bookReducer = (state: Book[] = initialState, action: BookAction): Book[] => {

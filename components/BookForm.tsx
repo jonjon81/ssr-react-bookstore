@@ -1,14 +1,13 @@
 import React, { FC, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/actions/BookActions';
-import { blockInvalidChar } from '../utils/helper';
 
 interface BookFormProps {}
 
 const BookForm: FC<BookFormProps> = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState<string>('');
-  const [price, setPrice] = useState<number>(0);
+  const [price, setPrice] = useState<string>('');
   const [category, setCategory] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [show, setShow] = useState<boolean>(false);
@@ -26,7 +25,7 @@ const BookForm: FC<BookFormProps> = () => {
     dispatch(addBook(data));
     setTitle('');
     setMessage('');
-    setPrice(0);
+    setPrice('');
     setCategory('');
     setShow(!show);
   };
@@ -54,12 +53,12 @@ const BookForm: FC<BookFormProps> = () => {
             <br /> <br />
             <input
               required
-              onKeyDown={blockInvalidChar}
               value={price}
-              type="number"
+              type="text"
+              pattern="[0-9]*"
               name="price"
               placeholder="Enter Book Price"
-              onChange={(e) => setPrice(Number(e.target.value))}
+              onChange={(e) => setPrice(e.target.value)}
             />
             <br /> <br />
             <input
