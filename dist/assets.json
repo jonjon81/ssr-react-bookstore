@@ -1,0 +1,121 @@
+{
+  "_chunk-30a30e46.js": {
+    "file": "assets/chunks/chunk-30a30e46.js"
+  },
+  "_chunk-4d04ce61.js": {
+    "file": "assets/chunks/chunk-4d04ce61.js"
+  },
+  "_chunk-5e9d3f9b.js": {
+    "file": "assets/chunks/chunk-5e9d3f9b.js",
+    "imports": [
+      "_chunk-4d04ce61.js"
+    ]
+  },
+  "assets/book-cover-1.jpg": {
+    "file": "assets/static/book-cover-1.7a6ddd8a.jpg",
+    "src": "assets/book-cover-1.jpg"
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js": {
+    "dynamicImports": [
+      "pages/about/index.page.tsx",
+      "pages/index/index.page.tsx",
+      "renderer/_error.page.tsx",
+      "renderer/_default.page.client.tsx",
+      "renderer/_default.page.server.tsx?extractAssets&lang.tsx"
+    ],
+    "file": "assets/entries/entry-client-routing.208b1323.js",
+    "imports": [
+      "_chunk-30a30e46.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js"
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js": {
+    "dynamicImports": [
+      "pages/about/index.page.tsx",
+      "pages/index/index.page.tsx",
+      "renderer/_error.page.tsx",
+      "renderer/_default.page.client.tsx",
+      "renderer/_default.page.server.tsx?extractAssets&lang.tsx"
+    ],
+    "file": "assets/entries/entry-server-routing.8251910c.js",
+    "imports": [
+      "_chunk-30a30e46.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js"
+  },
+  "pages/about/index.page.css": {
+    "file": "assets/static/index.page.f1aef519.css",
+    "src": "pages/about/index.page.css"
+  },
+  "pages/about/index.page.tsx": {
+    "css": [
+      "assets/static/index.page.f1aef519.css"
+    ],
+    "file": "assets/entries/pages_about_index.page.479e3e07.js",
+    "imports": [
+      "_chunk-4d04ce61.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/about/index.page.tsx"
+  },
+  "pages/index/index.page.css": {
+    "file": "assets/static/index.page.c1e94dbc.css",
+    "src": "pages/index/index.page.css"
+  },
+  "pages/index/index.page.tsx": {
+    "assets": [
+      "assets/static/book-cover-1.7a6ddd8a.jpg"
+    ],
+    "css": [
+      "assets/static/index.page.c1e94dbc.css"
+    ],
+    "file": "assets/entries/pages_index_index.page.c1a4561f.js",
+    "imports": [
+      "_chunk-4d04ce61.js",
+      "_chunk-5e9d3f9b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/index/index.page.tsx"
+  },
+  "renderer/_default.page.client.tsx": {
+    "file": "assets/entries/renderer_default.page.client.e8c9cafa.js",
+    "imports": [
+      "_chunk-4d04ce61.js",
+      "_chunk-5e9d3f9b.js",
+      "renderer/_default.page.server.tsx?extractAssets&lang.tsx"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.client.tsx"
+  },
+  "renderer/_default.page.server.tsx?extractAssets&lang.css": {
+    "file": "assets/static/default.page.server.d4835ae9.css",
+    "src": "renderer/_default.page.server.tsx?extractAssets&lang.css"
+  },
+  "renderer/_default.page.server.tsx?extractAssets&lang.tsx": {
+    "css": [
+      "assets/static/default.page.server.d4835ae9.css"
+    ],
+    "file": "assets/entries/renderer_default.page.server.extractAssets.334717de.js",
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.server.tsx?extractAssets&lang.tsx"
+  },
+  "renderer/_error.page.tsx": {
+    "file": "assets/entries/renderer_error.page.9b14c43c.js",
+    "imports": [
+      "_chunk-4d04ce61.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_error.page.tsx"
+  },
+  "renderer/logo.svg": {
+    "file": "assets/static/logo.bebe2e90.svg",
+    "src": "renderer/logo.svg"
+  }
+}
